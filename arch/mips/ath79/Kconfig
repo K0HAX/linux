@@ -62,6 +62,16 @@ config ATH79_MACH_PB44
 	  Say 'Y' here if you want your kernel to support the
 	  Atheros PB44 reference board.
 
+config ATH79_MACH_WIFI_PINEAPPLE_MK5
+	bool "Hak5 WiFi Pineapple MK5 support"
+	select SOC_AR933X
+	select ATH79_DEV_ETH
+	select ATH79_DEV_GPIO_BUTTONS
+	select ATH79_DEV_LEDS_GPIO
+	select ATH79_DEV_M25P80
+	select ATH79_DEV_USB
+	select ATH79_DEV_WMAC
+
 config ATH79_MACH_UBNT_XM
 	bool "Ubiquiti Networks XM (rev 1.0) board"
 	select SOC_AR724X
